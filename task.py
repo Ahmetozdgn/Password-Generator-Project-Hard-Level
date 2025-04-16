@@ -26,11 +26,11 @@ for char in range(0, nr_letters):
 
 # Kullanıcının istediği sayıda rastgele sembol seçilip listeye eklenir.
 for char in range(0, nr_symbols):
-  password_list += random.choice(symbols)
+  password_list.append(random.choice(symbols))
 
 # Kullanıcının istediği sayıda rastgele rakam seçilip listeye eklenir.
 for char in range(0, nr_numbers):
-  password_list += random.choice(numbers)
+  password_list.append(random.choice(numbers))
 
 print(password_list)
 
@@ -46,3 +46,4 @@ for char in password_list:
     password += char
 
 print(f"your password is:{password}")
+
